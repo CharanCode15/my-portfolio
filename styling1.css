@@ -1,0 +1,73 @@
+div{
+    padding: 45px;
+}
+button{
+    size: 19px;
+}
+h1 {
+
+    font-size: 3em;
+    
+    letter-spacing: 1px;
+    
+    font-weight: bold;
+    
+    font-family: 'Montserrat', sans-serif; background: url('./colour.jpg');
+    
+    -webkit-background-clip: text;
+    
+    background-clip: text;
+    
+    -webkit-text-fill-color: transparent; animation: text 7.5s linear infinite;
+    
+    }
+    
+    @keyframes text {
+    
+    from { background-position: 0% 50%; } to { background-position: 100% 100%; }
+    
+    }
+    .button {
+
+        text-decoration: none;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+        
+         color: yellow;
+         outline: 2px solid red; 
+         padding: 30px 60px;
+         position: relative;
+        
+         overflow: hidden;
+         transition: color 1s;
+        
+        }
+        
+        .button:hover{ color:
+        
+        #3ab475;
+        
+        }
+        
+        .button::before{
+        
+        content: '';
+         position: absolute;
+        
+        top: 0;
+        
+        left: -50px;
+        
+        width: 0;
+        
+        height: 100%;
+        
+        background-color:rgb(5, 255, 1);
+        
+        transform: skewX(40deg);
+        
+        z-index: -1;
+        
+        transition: width 1s;
+        
+        }
